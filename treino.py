@@ -1,12 +1,37 @@
-print('===Cauculadora===')
-numero01 = float(input('Digite um número: '))
-numero02 = float(input('Digite outro numero: '))
+while True:
+    print('===Cauculadora===')
+    print('''
+    Escolha uma opção:
+    1-soma
+    2-subtrair
+    3-multiplicar
+    4-dividir
+    5-Sair   
+    ''')
 
-soma = numero01 + numero02
-sub = numero01 - numero02
-mult = numero01 * numero02
-divi = numero01 / numero02
-print(soma)
-print(sub)
-print(mult)
-print(divi)
+    opcao = input('Escolha uma opção:')
+    if opcao == '1':
+        n1 = int(input('Digite o primeiro numero: '))
+        n2 = int(input('Digite o segundo numero: '))
+        print('O resultado é:',n1 + n2)
+
+    if opcao == '2':
+        n1 = int(input('Digite o primeiro numero: '))
+        n2 = int(input('Digite o segundo numero: '))
+        print('O resultado é:',n1 - n2)
+
+    if opcao == '3':
+        n1 = int(input('Digite o primeiro numero: '))
+        n2 = int(input('Digite o segundo numero: '))
+        print('O resultado é:',n1 * n2)
+
+    if opcao == '4':
+        n1 = int(input('Digite o primeiro numero: '))
+        n2 = int(input('Digite o segundo numero: '))
+        print('O resultado é:',n1 / n2)
+
+    elif opcao == '5':
+        print('Encerrando...')
+        break
+    else:
+        print('Error')
